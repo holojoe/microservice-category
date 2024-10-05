@@ -56,7 +56,7 @@ class CategoryController extends Controller
         $category = $this->findCategoryOrFail($id);
         if (is_null($category)) {
             return response()->json([
-                'message' => 'Categorie avec l\' identifiant: ' . $id . ' n\'est pas.',
+                'message' => 'Categorie avec l\'identifiant: ' . $id . ' n\'existe pas.',
                 'status' => 404
             ], 404);
         }
@@ -76,7 +76,7 @@ class CategoryController extends Controller
         $category =  $this->findCategoryOrFail($id);
         if (is_null($category)) {
             return response()->json([
-                'message' => 'Categorie avec l\' identifiant: ' . $id . ' n\'est pas.',
+                'message' => 'Categorie avec l\'identifiant: ' . $id . ' n\'existe pas.',
                 'status' => 404
             ], 404);
         }
@@ -103,7 +103,7 @@ class CategoryController extends Controller
         $category = $this->findCategoryOrFail($id);
         if (is_null($category)) {
             return response()->json([
-                'message' => 'Categorie avec l\' identifiant: ' . $id . ' n\'est pas.',
+                'message' => 'Categorie avec l\'identifiant: ' . $id . ' n\'existe pas.',
                 'status' => 404
             ], 404);
         }

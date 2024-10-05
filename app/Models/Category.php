@@ -11,6 +11,7 @@ class Category extends Model
     use HasFactory;
 
     protected $guarded = [];
+    //protected $fillable = ['name', 'description'];
 
     // Automatische Generierung des Slugs
     public static function boot()
